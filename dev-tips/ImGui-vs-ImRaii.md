@@ -35,7 +35,7 @@ The `Dispose()` method on the object being "used" will be called after the `usin
 ## When the push happens in one method and the pop happens in another
 This usually happens when you are setting styles/colors in a window on `PreDraw()`, and removing those styles/colors on `PostDraw()`.
 
-```
+```csharp
 public class ColorfulWindow: Window {
   
   private ImRaii.Color? windowBg;
